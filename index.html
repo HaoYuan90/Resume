@@ -2,174 +2,179 @@
 <head>
    <title>HaoYuan's Resume</title>
    <style type='text/css'>
-      .header {
-         -webkit-print-color-adjust: exact;
-         background-color: #45423F;
-         height: 110px;
-         width: 100%;
-         text-align: right;
-         color: White;
-         width: 930px;
-         margin: 0 auto;
-         padding-bottom: 10px;
-      }
+	.header {
+		font-family: Helvetica, Sans-Serif;
+		-webkit-print-color-adjust: exact;
+		background-color: #45423F;
+		height: 110px;
+		width: 100%;
+		text-align: right;
+		color: White;
+		width: 930px;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
 
-         .header a {
-            color: #dbffdb;
-            text-decoration: none;
-            border-bottom: 1px dotted;
-         }
+	.header a {
+		color: #dbffdb;
+		text-decoration: none;
+		border-bottom: 1px dotted;
+	}
 
-            .header a:hover {
-               border-bottom: none;
-            }
+	.header a:hover {
+		border-bottom: none;
+	}
+		
+	.body {
+		font-family: Helvetica, Sans-Serif;
+	}
 
-      .leftCol {
-         text-align: left;
-         padding-left: 40;
-      }
+	.leftCol {
+		text-align: left;
+		padding-left: 40;
+	}
 
-      .rightCol {
-         padding-right: 15;
-         vertical-align: bottom;
-      }
+	.rightCol {
+		padding-right: 15;
+		vertical-align: bottom;
+	}
 
-      .compPara {
-         margin-bottom: 5px;
-         margin-top: 0px;
-      }
+	.subHeader {
+		margin-bottom: 5px;
+		margin-top: 10px;
+	}
 
-      .lowTopMargin {
-         margin-top: 0px;
-      }
+	.compPara {
+		margin-bottom: 5px;
+		margin-top: 0px;
+	}
 
-      .lowBottomMargin {
-         margin-bottom: 2px;
-      }
+	.lowTopMargin {
+		margin-top: 0px;
+	}
 
-      .name {
-         text-align: left;
-         font-family: Cambria;
-         font-size: 50px;
-         font-weight: bold;
-         padding-left: 15;
-      }
+	.lowBottomMargin {
+		margin-bottom: 2px;
+	}
 
-      .body {
-         width: 900px;
-         margin: 0 auto;
-         color: #222222;
-      }
+	.name {
+		text-align: left;
+		font-size: 50px;
+		font-weight: bold;
+		padding-left: 15;
+	}
 
-      table {
-         color: #222222;
-      }
+	.body {
+		width: 900px;
+		margin: 0 auto;
+		color: #222222;
+	}
 
-      h2 {
-         margin-bottom: 0px;
-         margin-top: 30px;
-      }
+	table {
+		color: #222222;
+	}
 
-      a {
-         color: white;
-      }
+	h2 {
+		margin-bottom: 0px;
+		margin-top: 30px;
+	}
 
-      .floatRight {
-         float: right;
-      }
+	.floatRight {
+		float: right;
+	}
    </style>
 </head>
 <body>
    <table class='header'>
       <tr>
          <td class='name'>Jiang HaoYuan</td>
-         <td class='rightCol'>jhypewpew@gmail.com</td>
+         <td class='rightCol'></td>
       </tr>
       <tr>
          <td class='leftCol'></td>
          <td class='rightCol'></td>
       </tr>
       <tr>
-         <td class='leftCol'>Software Engineer</td>
-         <td class='rightCol'>hp: 93543759</td>
+         <td class='leftCol'>Software Engineer from Singapore</td>
+         <td class='rightCol'>jhypewpew@gmail.com</td>
       </tr>
    </table>
    <div class='body'>
-
       <h2>SUMMARY</h2>
       <hr />
       <ul>
-         <li>Good understanding of concepts in software engineering</li>
-         <li>Experienced solving problems at scale</li>
+         <li>Solid understanding of concepts in software engineering</li>
+         <li>Experienced in solving problems at scale</li>
          <li>Effective in independent learning</li>
       </ul>
 
       <h2>PROFICIENCY</h2>
 	  <hr />
-	  <p class='compPara'>
-	  My 4 years in school and 2 years at work have exposed me to lots of different things, listed below are the more relevant ones
-	  </p>
       <p class='compPara'>
          <b>Languages:</b>
          Java, Scala for Spark
       </p>
       <p class='compPara'>
          <b>Tools:</b>
-         Spark, Pig, Hadoop, AWS, Cassandra, Elastic, Spring
+         Spark, Hadoop, AWS, Cassandra, Elastic, Spring
       </p>
 
-      <h2>EXPERIENCE AT WORK</h2>
+      <h2>EXPERIENCE</h2>
       <hr />
-      <p class='lowTopMargin'>
-         <b>Software Engineer at Mobilewalla Singapore</b>
+	  <p class='compPara'>
+	  This section is geared towards projects I have worked on professionally. For a list of other notable projects I have worked on, please refer to <a href="addendum_projects.html">Addendum: Projects</a> @ http://haoyuan90.github.io/Resume/addendum_projects.html
+	  </p>
+      <p class='subHeader'>
+         <b>Senior Software Engineer at Mobilewalla Singapore</b>
          <span class='floatRight'>May 2014 - Now</span>
       </p>
-      <ul>
-         <li>Worked on a system crawling, aggregating large volumn of data from various sources (Java)</li>
-		 <li>Worked on designing the storage and actual implementation of a data processing system (Java) <br/>
-		 This system powers a client-facing report interface granting insights to hundreds of millions of records monthly</li>
-         <li>Designed and realized workflow extracting features from billions of records a day and storing these features (Java, Scala)</li>
-         <li>Built a stable system classifying large volumn of data (Java, Scala)</li>
+	  <p class='compPara'>
+	  Mobilewalla is a fast growing adtech startup. I was mainly involved in our demand-side platform (bidding) product and our data initiative
+	  </p>
+      <ul class='lowTopMargin'>
+         <li>
+			 <p class='compPara'>Contributed to a system crawling data from various sources to be used as signals to classify mobile bid stream data. (Java)
+			 <br/>We build classifiers using these signals crawled from different places. 
+			 The crawling process for each source would be different, and reasons for failure could be different. 
+			 We build a process that crawls the parts using a best-effort and fail-safe approach.
+			 </p>
+		 </li>
+		 <li>
+			 <p class='compPara'>Built the Post Campaign Analysis(PCA) system which adds insights to our campaign data and display the insights to clients. (Java)
+			 <br/>I took over this product at infant stage and built upon it applying best practices using Redshift. 
+			 My efforts included, for example, designing batching strategy that fits well with how Redshift ingests data, designing database schema more suited for quries we run. 
+			 </p>
+         <li>
+			 <p class='compPara'>Designed and realized a system extracting features from a large volumn of data to be classified. (Java, Scala)
+			 <br/>In Mobilewalla, we collect tens of terrabytes of data a day and we need to make use of all the data from day to day within a look-back window. 
+			 To achieve that, we extract features from daily data and aggregate these features within the look-back window to produce a managble amount of data to use and to classify. 
+			 <br/>The challenges I have tackled in this system revolves around processing a huge amount of data reliably on schedule and to make sure the data processed can be used by our classification system efficiently.
+			 </p>
+		 </li>
+         <li>
+		     <p class='compPara'>Worked on a system that allows applying user defined classifiers to classify a large volumn of data. (Java, Scala)
+			 <br/>I contributed to the backend of our data classification system which powers Mobilewalla's mobile audience data business. 
+			 This system sift through a large amount of data and try to put these data into buckets to be shipped under different tags for our clients. 
+			 Efforts building this system includes, for exmaple, building the classifiers efficiently, building tools to assist in monitoring the system and so on. 
+			 </p>
+		 </li>
       </ul>
-
-      <p class='lowTopMargin'>
+	  
+	  <p class='subHeader'>
          <b>Internship at Tigerspike Singapore</b>
          <span class='floatRight'>May 2013 - Sept 2013</span>
       </p>
-      <ul>
-         <li>Worked with Tigerpike Singapore team on Phoenix Platform (web service using C#)</li>
-         <li>Improved load testing for web service modules</li>
-		 <li>Worked on new functionalities for documentation site</li>
+	  <p class='compPara'>
+	  Tigerspike is a digital product company. I contributed mainly to its web services platform Phoenix. 
+	  </p>
+      <ul class='lowTopMargin'>
+         <li>
+			 <p class='compPara'>Worked on documentation site and test suite for Phoenix (C#)
+			 <br/>Phoenix's documentation site uses a reflection model to generate documentations automatically with each build. Besides bug fixes, I built a new feature where a live request-response will be displayed in the documentation site so examples will no longer need to be hard-coded. 
+			 <br/>I revamped test suite for Phoenix on SoapUI with some scripting in Groovy</p>
+		 </li>
       </ul>
       
-      <h2>EXPERIENCE IN SCHOOL</h2>
-      <hr />
-      <p class='lowTopMargin'>
-         <b>Transformers</b>
-         <span class='floatRight'>Final Year Project</span>
-      </p>
-      <ul>
-         <li>Developed with Python on Blender</li>
-         <li>Project explores possibilities of automated 3D mesh cutting to produce transformable objects</li>
-      </ul>
-
-      <p class='lowTopMargin'>
-         <b>Elemental Tower Defense</b>
-         <span class='floatRight'>Software Engineering on Modern Application Platforms, May 2012</span>
-      </p>
-      <ul>
-         <li>Developed a tower defense game for iPad featuring an attack/defend social interaction</li>
-      </ul>
-
-      <p class='lowTopMargin'>
-         <b>Woof Vs Meow!</b>
-         <span class='floatRight'>Game Development, May 2013</span>
-      </p>
-      <ul>
-         <li>A turn based strategy game for 2 players developed with Unity3D in C#</li>
-         <li>1st place in 2nd SOC Term Project Showcase</li>
-      </ul>
-
       <h2>EDUCATION</h2>
       <hr />
       <p class='lowBottomMargin'>
