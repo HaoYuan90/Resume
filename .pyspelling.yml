@@ -1,0 +1,7 @@
+matrix:
+- name: Resume
+  aspell:
+    lang: en
+    d: en_GB
+  sources:
+  - index.html
