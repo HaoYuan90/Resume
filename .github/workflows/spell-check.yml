@@ -1,4 +1,4 @@
-name: Spell check
+name: Spell Check
 
 on:
   push:
@@ -23,4 +23,4 @@ jobs:
         sudo apt-get install aspell aspell-en
     - name: Spell check
       run: |
-        python -m pyspelling --config .pyspelling.yml
+        python -m pyspelling --config spellcheck/pyspelling_config.yml
