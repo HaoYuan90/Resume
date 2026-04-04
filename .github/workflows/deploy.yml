@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:  # To publish to GitHub Pages
@@ -36,6 +39,7 @@ jobs:
         python -m pyspelling --config spellcheck/pyspelling_config.yml
 
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: spell-check
     steps:
@@ -51,6 +55,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
